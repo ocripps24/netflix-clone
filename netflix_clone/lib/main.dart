@@ -9,7 +9,7 @@ class Netflix extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
       ),
       home: NetflixTabBar(),
     );
@@ -20,6 +20,28 @@ class NetflixTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    return DefaultTabController(
+      length: 1,
+      child: Theme(
+        data: ThemeData(
+          brightness: Brightness.dark
+        ),
+        child: Scaffold(
+          bottomNavigationBar: TabBar(
+            tabs: [
+              Tab(icon: Icon(Icons.home,), text: "Home",),
+            ],
+            labelColor: Colors.white,
+            unselectedLabelColor: Color(0xff999999),
+            indicatorColor: Colors.transparent
+          ),
+          body: TabBarView(
+            children: [
+              Center(child: Text("Page 1"),),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

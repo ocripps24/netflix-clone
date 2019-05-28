@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart'
+import 'homepage.dart';
 
 void main() => runApp(Netflix());
 
@@ -41,7 +41,7 @@ class NetflixTabBar extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Center(child: Text("Page 1"),),
+              HomeView(),
               Center(child: Text("Page 2"),),
               Center(child: Text("Page 3"),),
               Center(child: Text("Page 4"),),

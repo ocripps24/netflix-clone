@@ -129,3 +129,15 @@ Widget makePopularWidget() {
     ), // Column
   ); // Container
 }
+
+List<Widget> makeContainers() {
+  List<Container> movieList = [];
+  for (int i = 0; i < 20; i++) {
+    movieList.add(new Container(
+      color: Colors.red,
+      height: 100,
+      width: 60,
+      margin: EdgeInsets.all(3),
+    )); // Container
+  }
+}

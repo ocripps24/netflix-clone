@@ -1,6 +1,6 @@
 # Netflix Clone
 
-### [Screenshots](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#screenshots) - [Process & Credits](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#process-&-credits) - [Instructions](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#instructions) - [Installing Flutter](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#installing-flutter) - [Getting Started](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#getting-started)
+### [Screenshots](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#screenshots) - [Process & Credits](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#process--credits) - [Instructions](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#instructions) - [Installing Flutter](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#installing-flutter) - [Getting Started](https://github.com/ocripps24/netflix-clone/tree/master/netflix_clone#getting-started)
 
 ## Screenshots
 

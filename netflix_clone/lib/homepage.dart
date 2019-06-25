@@ -120,19 +120,25 @@ class HomeView extends StatelessWidget {
   Widget bannerMovieWidget() {
     return new Container(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text("Available Now"),
+          Container(
+            padding: EdgeInsets.only(left: 10),
+            child: Text("Available Now", style: topMenuStyle),
+          ), // Container
           Container(child: Image(
             image: new AssetImage("lib/assets/birdbox.jpg"),
           ),), // Image // Container
           Container(
+            padding: EdgeInsets.only(top: 4, bottom: 4),
             color: Colors.black,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 FlatButton(
                   child: Container(
-                    width: 130,
+                    padding: EdgeInsets.only(top: 8, bottom: 8),
+                    width: 160,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -146,7 +152,8 @@ class HomeView extends StatelessWidget {
                 ), // FlatButton
                 FlatButton(
                   child: Container(
-                    width: 130,
+                    padding: EdgeInsets.only(top: 8, bottom: 8),
+                    width: 160,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -155,7 +162,7 @@ class HomeView extends StatelessWidget {
                       ], // <Widget>[]
                     ), // Row
                   ), // Container
-                  color: Colors.white,
+                  color: Color(0xfff4f4f4),
                   onPressed: () {},
                 ), // FlatButton
               ], // <Widget>[]

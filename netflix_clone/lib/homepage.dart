@@ -40,9 +40,15 @@ class HomeView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Text('Series', style: topMenuStyle),
-                        Text('Films', style: topMenuStyle),
-                        Text('My List', style: topMenuStyle),
+                        FlatButton(
+                          child: Text('Series', style: topMenuStyle),
+                        ), // FlatButton
+                        FlatButton(
+                          child: Text('Films', style: topMenuStyle),
+                        ), // FlatButton
+                        FlatButton(
+                          child: Text('My List', style: topMenuStyle),
+                        ), // FlatButton
                       ], // Widget[]
                     ), // Row
                   ), // Container

@@ -1,5 +1,7 @@
 # Netflix Clone
 
+### [Screenshots](https://github.com/ocripps24/netflix-clone#screenshots) - [Process & Credits](https://github.com/ocripps24/netflix-clone#process-&-credits) - [Instructions](https://github.com/ocripps24/netflix-clone#instructions) - [Installing Flutter](https://github.com/ocripps24/netflix-clone#installing-flutter)
+
 ## Screenshots
 
 ![Home](https://imgur.com/2twEElV.png)
@@ -9,7 +11,7 @@
 
 ## Process & Credits
 
-This is an imitation build following a One Day build video a this link:
+The objective was to build the front end/UI side of the first page of the Netflix app. This is an imitation build following a One Day build video a this link:
 https://youtu.be/qFGzT73bjQ8
 
 I have also reviewed the original developers source code for the project here:
@@ -24,7 +26,7 @@ The objective was to develop some exposure to the exciting new Flutter framework
 3. open -a simulator.app (XCode must be installed on your computer to run the XCode simulator although a similar Android system can be used)
 4. flutter run (You must point to your local flutter installation to use flutter commands (See below))
 
-## Installing Flutter and terminal commands
+## Installing Flutter
 
 1. Download the latest flutter package from: https://flutter.dev/docs/get-started/install
 2. Optional - follow the recommended steps here to setup your editor

@@ -142,8 +142,14 @@ class HomeView extends StatelessWidget {
   List<Widget> makeContainers() {
     List<Container> movieList = [];
     for (int i = 0; i < 20; i++) {
+      Color color;
+      if (i % 2 == 0) {
+        color = new Color(0xffd11919);
+      } else {
+        color = new Color(0xff1cc413);
+      }
       movieList.add(new Container(
-        color: Colors.red,
+        color: color,
         height: 200,
         width: 120,
         margin: EdgeInsets.all(3),

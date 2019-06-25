@@ -104,14 +104,15 @@ class HomeView extends StatelessWidget {
                 ], // Widget[]
               ), // Row
             ), // Center
-            makePopularWidget(),
+            makePopularWidget("Popular on Netflix"),
+            makePopularWidget("Trending Now"),
           ], // Widget[]
         ), // ListView
       ), // Center
     ); // Container
   }
 
-  Widget makePopularWidget() {
+  Widget makePopularWidget(String title) {
     return new Container(
       height: 220,
       padding: EdgeInsets.only(left: 5, right: 5),
@@ -121,7 +122,7 @@ class HomeView extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Text("Popular on Netflix", style: topMenuStyle),
+                Text(title, style: topMenuStyle),
               ], // <Widget>[]
             ), // Row
           ), // Expanded
@@ -139,20 +140,18 @@ class HomeView extends StatelessWidget {
     ); // Container
   }
 
+  int counter = 0;
   List<Widget> makeContainers() {
     List<Container> movieList = [];
-    for (int i = 0; i < 20; i++) {
-      Color color;
-      if (i % 2 == 0) {
-        color = new Color(0xffd11919);
-      } else {
-        color = new Color(0xff1cc413);
-      }
+    for (int i = 0; i < 12; i++) {
+      counter++;
       movieList.add(new Container(
-        color: color,
+        padding: EdgeInsets.all(5),
         height: 200,
-        width: 120,
-        margin: EdgeInsets.all(3),
+        // width: 120,
+        child: Image(
+          image: AssetImage("lib/assets/" + i.toString() + ".jpg"),
+        ), // Image
       )); // Container
     }
     return movieList;

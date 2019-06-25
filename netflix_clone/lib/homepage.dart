@@ -112,12 +112,20 @@ class HomeView extends StatelessWidget {
 
   Widget makePopularWidget() {
     return new Container(
-      height: 120,
+      height: 220,
+      padding: EdgeInsets.only(left: 5),
       child: Column(
         children: <Widget>[
-          Text("Popular on Netflix", style: topMenuStyle),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text("Popular on Netflix", style: topMenuStyle),
+              ], // <Widget>[]
+            ), // Row
+          ), // Expanded
           Container(
-            height: 100,
+            height: 200,
             child: ListView(
               padding: EdgeInsets.all(3),
               scrollDirection: Axis.horizontal,
@@ -135,8 +143,8 @@ class HomeView extends StatelessWidget {
     for (int i = 0; i < 20; i++) {
       movieList.add(new Container(
         color: Colors.red,
-        height: 100,
-        width: 60,
+        height: 200,
+        width: 120,
         margin: EdgeInsets.all(3),
       )); // Container
     }

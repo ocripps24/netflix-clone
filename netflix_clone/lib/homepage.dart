@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              height: 450,
+              height: 550,
               decoration: new BoxDecoration(
                 image: new DecorationImage(
                   image: new AssetImage("lib/assets/starwars.jpg"),
@@ -106,6 +106,7 @@ class HomeView extends StatelessWidget {
             ), // Center
             makePopularWidget("Popular on Netflix"),
             makePopularWidget("Trending Now"),
+            makeContinueWatchingWidget("Continue Watching for Oliver"),
           ], // Widget[]
         ), // ListView
       ), // Center
@@ -131,7 +132,6 @@ class HomeView extends StatelessWidget {
             child: ListView(
               padding: EdgeInsets.all(3),
               scrollDirection: Axis.horizontal,
-              //shrinkwrap: true,
               children: makeContainers()
             ), // ListView
           ), // Container
@@ -140,20 +140,50 @@ class HomeView extends StatelessWidget {
     ); // Container
   }
 
+  List<Widget> makeContinueWatchingWidget(String title) {
+    return new Container(
+      padding: EdgeInsets.only(left: 5, right: 5),
+      height: 220,
+      child: Column(
+        children: <Widget>[
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(title, style: topMenuStyle),
+              ], // <Widget>[]
+            ), // Row
+          ), // Expanded
+          Container(
+            height: 200,
+            child: ListView(
+              padding: EdgeInsets.all(3),
+              scrollDirection: Axis.horizontal,
+              children: makeContinueContainers()
+            ), // ListView
+          ), // Container
+        ], // <Widget>[]
+      ), // Container
+    ); // Container
+  }
+
   int counter = 0;
   List<Widget> makeContainers() {
     List<Container> movieList = [];
-    for (int i = 0; i < 12; i++) {
+    for (int i = 0; i < 6; i++) {
       counter++;
       movieList.add(new Container(
         padding: EdgeInsets.all(5),
         height: 200,
-        // width: 120,
         child: Image(
-          image: AssetImage("lib/assets/" + i.toString() + ".jpg"),
+          image: AssetImage("lib/assets/" + counter.toString() + ".jpg"),
         ), // Image
       )); // Container
+      if (counter == 12) {
+        counter = 0;
+      }
     }
     return movieList;
   }
+
 }

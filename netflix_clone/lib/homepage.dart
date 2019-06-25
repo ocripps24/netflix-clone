@@ -6,9 +6,9 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         primaryColor: Colors.black,
-      ),
+      ), // ThemeData
       home: HomeView(),
-    );
+    ); // MaterialApp
   }
 }
 
@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              height: 500,
+              height: 450,
               decoration: new BoxDecoration(
                 image: new DecorationImage(
                   image: new AssetImage("lib/assets/starwars.jpg"),
@@ -40,6 +40,13 @@ class HomeView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
+                        Container(
+                          height: 50,
+                          width: 50,
+                            child: Image(
+                              image: AssetImage("lib/assets/netflix.png")
+                            ), // Image
+                        ), // Container                        
                         FlatButton(
                           child: Text('Series', style: topMenuStyle),
                         ), // FlatButton

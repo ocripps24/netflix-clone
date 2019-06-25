@@ -157,12 +157,12 @@ class HomeView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.add, color: Colors.black,),
-                        Text("My List", style: TextStyle(color: Colors.black),)
+                        Icon(Icons.add, color: Colors.white,),
+                        Text("My List", style: TextStyle(color: Colors.white),)
                       ], // <Widget>[]
                     ), // Row
                   ), // Container
-                  color: Color(0xfff4f4f4),
+                  color: Color(0xff4f4f4f),
                   onPressed: () {},
                 ), // FlatButton
               ], // <Widget>[]

@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      color: Colors.red,
+      // color: Colors.red,
       child: Center(
         child: ListView(
           children: <Widget>[
@@ -46,50 +46,50 @@ class HomeView extends StatelessWidget {
                       ], // Widget[]
                     ), // Row
                   ), // Container
-                  Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        FlatButton(
-                          child: Column(
-                            children: <Widget>[
-                              Icon(Icons.add, color: Colors.white, size: 30),
-                              Text("My List", style: buttonInfoStyle)
-                            ], // <Widget>[]
-                          ), // Column
-                          onPressed: () {
-
-                          },
-                        ), // FlatButton
-                        FlatButton(
-                          color: Colors.white,
-                          child: Row(
-                            children: <Widget>[
-                              Icon(Icons.play_arrow, color: Colors.black),
-                              Text("Play", style: buttonBlackStyle)
-                            ], // <Widget>[]
-                          ), // Row
-                          onPressed: () {
-
-                          },
-                        ), // FlatButton
-                        FlatButton(
-                          child: Column(
-                            children: <Widget>[
-                              Icon(Icons.info, color: Colors.white, size: 30),
-                              Text("Info", style: buttonInfoStyle)
-                            ], // <Widget>[]
-                          ), // Column
-                          onPressed: () {
-
-                          },
-                        ), // FlatButton
-                      ], // Widget[]
-                    ), // Row
-                  ), // Center
                 ], // Widget[]
               ), // Column
             ), // Container
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  FlatButton(
+                    child: Column(
+                      children: <Widget>[
+                        Icon(Icons.add, color: Colors.white, size: 30),
+                        Text("My List", style: buttonInfoStyle)
+                      ], // <Widget>[]
+                    ), // Column
+                    onPressed: () {
+
+                    },
+                  ), // FlatButton
+                  FlatButton(
+                    color: Colors.white,
+                    child: Row(
+                      children: <Widget>[
+                        Icon(Icons.play_arrow, color: Colors.black),
+                        Text("Play", style: buttonBlackStyle)
+                      ], // <Widget>[]
+                    ), // Row
+                    onPressed: () {
+
+                    },
+                  ), // FlatButton
+                  FlatButton(
+                    child: Column(
+                      children: <Widget>[
+                        Icon(Icons.info, color: Colors.white, size: 30),
+                        Text("Info", style: buttonInfoStyle)
+                      ], // <Widget>[]
+                    ), // Column
+                    onPressed: () {
+
+                    },
+                  ), // FlatButton
+                ], // Widget[]
+              ), // Row
+            ), // Center
           ], // Widget[]
         ), // ListView
       ), // Center

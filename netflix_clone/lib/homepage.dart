@@ -27,11 +27,16 @@ class HomeView extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 500,
-              color: Colors.blue, // change to background image in the future
+              decoration: new BoxDecoration(
+                image: new DecorationImage(
+                  image: new AssetImage("lib/assets/starwars.jpg"),
+                  fit: BoxFit.fitWidth
+                ), // DecorationImage
+              ), // BoxDecoration
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Center(
+                  Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -40,7 +45,7 @@ class HomeView extends StatelessWidget {
                         Text('My List', style: topMenuStyle),
                       ], // Widget[]
                     ), // Row
-                  ), // Center
+                  ), // Container
                   Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,

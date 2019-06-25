@@ -1,9 +1,9 @@
 # netflix_clone
 
-![Home](https://imgur.com/GlavPHW.png)
-![View 1](https://imgur.com/KPXdCBj.png)
-![View 2](https://imgur.com/GX017ls.png)
-![View 3](https://imgur.com/YEIxAur.png)
+![Home](https://imgur.com/2twEElV.png)
+![View 1](https://imgur.com/k6mqit7.png)
+![View 2](https://imgur.com/6cIzKie.png)
+![View 3](https://imgur.com/mREbKVE.png)
 
 ## Process & Credits
 

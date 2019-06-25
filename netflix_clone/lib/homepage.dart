@@ -103,41 +103,43 @@ class HomeView extends StatelessWidget {
                 ], // Widget[]
               ), // Row
             ), // Center
+            makePopularWidget(),
           ], // Widget[]
         ), // ListView
       ), // Center
     ); // Container
   }
-}
 
-Widget makePopularWidget() {
-  return new Container(
-    height: 120,
-    child: Column(
-      children: <Widget>[
-        Text("Popular on Netflix", style: topMenuStyle),
-        Container(
-          height: 100,
-          child: ListView(
-            padding: EdgeInsets.all(3),
-            scrollDirection: Axis.horizontal,
-            //shrinkwrap: true,
-            children: makeContainers()
-          ), // ListView
-        ), // Container
-      ], // <Widget>[]
-    ), // Column
-  ); // Container
-}
+  Widget makePopularWidget() {
+    return new Container(
+      height: 120,
+      child: Column(
+        children: <Widget>[
+          Text("Popular on Netflix", style: topMenuStyle),
+          Container(
+            height: 100,
+            child: ListView(
+              padding: EdgeInsets.all(3),
+              scrollDirection: Axis.horizontal,
+              //shrinkwrap: true,
+              children: makeContainers()
+            ), // ListView
+          ), // Container
+        ], // <Widget>[]
+      ), // Column
+    ); // Container
+  }
 
-List<Widget> makeContainers() {
-  List<Container> movieList = [];
-  for (int i = 0; i < 20; i++) {
-    movieList.add(new Container(
-      color: Colors.red,
-      height: 100,
-      width: 60,
-      margin: EdgeInsets.all(3),
-    )); // Container
+  List<Widget> makeContainers() {
+    List<Container> movieList = [];
+    for (int i = 0; i < 20; i++) {
+      movieList.add(new Container(
+        color: Colors.red,
+        height: 100,
+        width: 60,
+        margin: EdgeInsets.all(3),
+      )); // Container
+    }
+    return movieList;
   }
 }

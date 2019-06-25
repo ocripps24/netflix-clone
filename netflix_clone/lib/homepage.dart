@@ -46,7 +46,7 @@ class HomeView extends StatelessWidget {
                             child: Image(
                               image: AssetImage("lib/assets/netflix.png")
                             ), // Image
-                        ), // Container                        
+                        ), // Container
                         FlatButton(
                           child: Text('Series', style: topMenuStyle),
                         ), // FlatButton
@@ -108,4 +108,24 @@ class HomeView extends StatelessWidget {
       ), // Center
     ); // Container
   }
+}
+
+Widget makePopularWidget() {
+  return new Container(
+    height: 120,
+    child: Column(
+      children: <Widget>[
+        Text("Popular on Netflix", style: topMenuStyle),
+        Container(
+          height: 100,
+          child: ListView(
+            padding: EdgeInsets.all(3),
+            scrollDirection: Axis.horizontal,
+            //shrinkwrap: true,
+            children: makeContainers()
+          ), // ListView
+        ), // Container
+      ], // <Widget>[]
+    ), // Column
+  ); // Container
 }

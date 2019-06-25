@@ -109,11 +109,24 @@ class HomeView extends StatelessWidget {
               makePopularWidget("Popular on Netflix"),
               makePopularWidget("Trending Now"),
               makeContinueWatchingWidget("Continue Watching for Oliver"),
+              bannerMovieWidget(),
             ], // Widget[]
           ), // ListView
         ), // Center
       ), // Container
     ); // Material
+  }
+
+  Widget bannerMovieWidget() {
+    return new Container(
+      child: Column(
+        children: <Widget>[
+          Container(child: Image(
+            image: new AssetImage("lib/assets/birdbox.jpg"),
+          ),), // Image // Container
+        ], // <Widget>[]
+      ), // Column
+    ); // Container
   }
 
   Widget makePopularWidget(String title) {

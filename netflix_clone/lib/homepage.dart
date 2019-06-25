@@ -121,9 +121,46 @@ class HomeView extends StatelessWidget {
     return new Container(
       child: Column(
         children: <Widget>[
+          Text("Available Now"),
           Container(child: Image(
             image: new AssetImage("lib/assets/birdbox.jpg"),
           ),), // Image // Container
+          Container(
+            color: Colors.black,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                FlatButton(
+                  child: Container(
+                    width: 130,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(Icons.play_arrow, color: Colors.black,),
+                        Text("Play", style: TextStyle(color: Colors.black),),
+                      ], // <Widget>[]
+                    ), // Row
+                  ), // Container
+                  color: Colors.white,
+                  onPressed: () {},
+                ), // FlatButton
+                FlatButton(
+                  child: Container(
+                    width: 130,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(Icons.add, color: Colors.black,),
+                        Text("My List", style: TextStyle(color: Colors.black),)
+                      ], // <Widget>[]
+                    ), // Row
+                  ), // Container
+                  color: Colors.white,
+                  onPressed: () {},
+                ), // FlatButton
+              ], // <Widget>[]
+            ), // Row
+          ), // Container
         ], // <Widget>[]
       ), // Column
     ); // Container

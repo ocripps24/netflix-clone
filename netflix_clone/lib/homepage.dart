@@ -62,7 +62,8 @@ class HomeView extends StatelessWidget {
                 ], // Widget[]
               ), // Column
             ), // Container
-            Center(
+            Container(
+              padding: EdgeInsets.only(top: 20, bottom: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -113,7 +114,7 @@ class HomeView extends StatelessWidget {
   Widget makePopularWidget() {
     return new Container(
       height: 220,
-      padding: EdgeInsets.only(left: 5),
+      padding: EdgeInsets.only(left: 5, right: 5),
       child: Column(
         children: <Widget>[
           Expanded(

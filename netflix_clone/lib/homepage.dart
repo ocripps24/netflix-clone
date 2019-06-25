@@ -140,7 +140,7 @@ class HomeView extends StatelessWidget {
     ); // Container
   }
 
-  List<Widget> makeContinueWatchingWidget(String title) {
+  Widget makeContinueWatchingWidget(String title) {
     return new Container(
       padding: EdgeInsets.only(left: 5, right: 5),
       height: 220,
@@ -186,4 +186,55 @@ class HomeView extends StatelessWidget {
     return movieList;
   }
 
+  List<Widget> makeContinueContainers() {
+    List<Container> movieList = [];
+    for (int i = 1; i < 7; i++) {
+      counter ++;
+      movieList.add(new Container(
+        padding: EdgeInsets.all(2),
+        height: 200,
+
+        child: Column(
+          children: <Widget>[
+            Container(
+              height: 140,
+              width: 100,
+              decoration: new BoxDecoration(
+                image: new DecorationImage(
+                  image: new AssetImage("lib/assets/" + counter.toString() + ".jpg"),
+                  fit: BoxFit.fitHeight
+                ), // DecorationImage
+              ), // BoxDecoration
+              child: Center(
+                child: FlatButton(
+                  child: Icon(Icons.play_circle_outline, size: 70),
+                  onPressed: () {},
+                ), // FlatButton
+              ), // Center
+            ), // Container
+            Container(
+              height: 30,
+              margin: EdgeInsets.all(3),
+              padding: EdgeInsets.only(left: 10, right: 10),
+              color: Colors.black,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    padding: EdgeInsets.only(right: 25),
+                    child: Text("S1:E" + i.toString(), style: TextStyle(color: Color(0xffc1c1c1)),),
+                  ), // Container
+                  Icon(Icons.info, size: 15, color: Color(0xffc1c1c1))
+                ], // <Widget>[]
+              ), // Row
+            ), // Container
+          ], // <Widget>[]
+        ), // Column
+      ));
+      if (counter == 12) {
+        counter = 1;
+      }
+    }
+    return movieList;
+  }
 }

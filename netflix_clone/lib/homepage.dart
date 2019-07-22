@@ -138,7 +138,7 @@ class HomeView extends StatelessWidget {
                 FlatButton(
                   child: Container(
                     padding: EdgeInsets.only(top: 8, bottom: 8),
-                    width: 160,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -153,7 +153,7 @@ class HomeView extends StatelessWidget {
                 FlatButton(
                   child: Container(
                     padding: EdgeInsets.only(top: 8, bottom: 8),
-                    width: 160,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[

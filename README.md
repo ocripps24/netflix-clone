@@ -17,7 +17,9 @@ https://youtu.be/qFGzT73bjQ8
 I have also reviewed the original developers source code for the project here:
 https://github.com/KalleHallden/Netflix_Clone  
 
-The objective was to develop some exposure to the exciting new Flutter framework whilst practicing my processes along the way
+The objective was to develop some exposure to the exciting new Flutter framework whilst practicing my processes along the way.
+
+You can find a video showing my version here: https://youtu.be/S_WRuDTjXjw
 
 ## Instructions
 

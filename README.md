@@ -12,7 +12,7 @@
 ## Process & Credits
 
 The objective was to build the front end/UI side of the first page of the Netflix app. This is an imitation build following a One Day build video a this link:
-https://youtu.be/qFGzT73bjQ8
+<a href="https://youtu.be/qFGzT73bjQ8">YouTube</a>
 
 I have also reviewed the original developers source code for the project here:
 https://github.com/KalleHallden/Netflix_Clone  
